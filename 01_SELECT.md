@@ -18,18 +18,17 @@ FROM table_name;
 
 ## ⭐️ Key Points 
 
-◼︎ Use * to select all columns 
-◼︎ Columns can be renamed using `AS`
+- Use * to select all columns 
+- Columns can be renamed using `AS`
 
---EXAMPLES--
+ 💫 Examples: 
 ```sql
-***********************************************************
 -- 1. Select first name and last name from employees table. 
 
 SELECT first_name, last_name
 FROM employees;
 
-***********************************************************
+
 -- 2. Select movie_title and movie_genre from movies table. rename movie_title to movie and movie_genre to genre
 
 SELECT movie_title AS movie,

@@ -11,14 +11,14 @@ FROM table_name
 WHERE condition; 
 ```
 
- 💫 Example
+ 🪄 Example
 
  ```sql
--- Select 'sales' from the department column in the employees table. 
+-- Find all Gryffindor students
 
-SELECT * 
-FROM employees 
-WHERE department = 'Sales'; 
+SELECT name, house
+FROM hogwarts_students 
+WHERE house = 'Gryffindor'; 
 ```
 
 
@@ -37,13 +37,13 @@ SELECT *
 FROM table_name
 LIMIT n;  
 ```
-💫 Example
+ 🪄 Example
 
  ```sql
--- Limit row output to only 15 results from the employees table 
+-- Limit output to just 15 students 
 
 SELECT * 
-FROM employees 
+FROM hogwarts_students 
 LIMIT 15;
 ```
 

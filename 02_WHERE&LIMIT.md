@@ -7,7 +7,7 @@
 
 ```sql
 SELECT column1, column2
-FROM table_name;
+FROM table_name
 WHERE condition; 
 ```
 
@@ -34,7 +34,7 @@ WHERE department = 'Sales';
 
 ```sql
 SELECT *
-FROM table_name;
+FROM table_name
 LIMIT n;  
 ```
 💫 Example

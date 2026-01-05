@@ -97,6 +97,32 @@ GROUP BY house;
 
 ## 6. HAVING 
 
+HAVING filters the results of aggregated data. It comes after GROUP BY. 
+Similar to WHERE, but WHERE filters rows before aggregation and HAVING filters after aggregation.  
+
+Note that HAVING only works with grouped/aggregated data. 
+
+**Syntax:**
+```sql
+SELECT column1, aggregate_function(column2)
+FROM table
+WHERE some_condition               --optional
+GROUP BY column1
+HAVING aggregate_condition;
+```
+
+🪄 Example
+```sql
+-- Find houses where total points are more than 350
+SELECT house, SUM(house_points) AS total_points
+FROM students
+GROUP BY house
+HAVING SUM(house_points) > 350; 
+```
+
+
+
+
 
 
 

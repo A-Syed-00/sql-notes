@@ -1,4 +1,4 @@
-#ORDER BY
+# ORDER BY
 
 - Sorts results in ascending (ASC, default) or descending (DESC) order.
 
